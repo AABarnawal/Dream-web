@@ -1,7 +1,24 @@
+"use client"
+
 import Link from "next/link"
 import { Facebook, Twitter, LinkedinIcon as LinkedIn, Instagram } from "lucide-react"
+import { usePathname } from "next/navigation"
+import { scrollToSection } from "@/app/utils/scrollToSection"
 
 const Footer = () => {
+  const pathname = usePathname()
+
+  const handleClientClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    if (pathname === '/') {
+      // If we're on home page, just scroll
+      scrollToSection('clients')
+    } else {
+      // If we're on another page, navigate to home and then scroll
+      window.location.href = '/#clients'
+    }
+  }
+
   return (
     <footer className="bg-gray-100 mt-8 dark:bg-zinc-950">
       <div className="container mx-auto px-6 py-8">
@@ -21,12 +38,16 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/service" className="text-gray-600 hover:text-[#e53a20]">
+                <Link href="/services" className="text-gray-600 hover:text-[#e53a20]">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/client" className="text-gray-600 hover:text-[#e53a20]">
+                <Link
+                  href="/#clients"
+                  onClick={handleClientClick}
+                  className="text-gray-600 hover:text-[#e53a20]"
+                >
                   Clients
                 </Link>
               </li>
@@ -49,20 +70,25 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
-                <Link href="/service/information-security" className="text-gray-600 hover:text-[#e53a20]">
-                  Information Security
+                <Link href="/services/" className="text-gray-600 hover:text-[#e53a20]">
+                Governance, Risk & Compliance
                 </Link>
               </li>
               <li>
-                <Link href="/service/software-development" className="text-gray-600 hover:text-[#e53a20]">
-                  Software Development
+                <Link href="/services/" className="text-gray-600 hover:text-[#e53a20]">
+                Vulnerability Assessment & Penetration Testing
                 </Link>
               </li>
               <li>
-                <Link href="/service/it-consulting" className="text-gray-600 hover:text-[#e53a20]">
-                  IT Consulting
+                <Link href="/services/" className="text-gray-600 hover:text-[#e53a20]">
+                Cloud Security Assessments
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/" className="text-gray-600 hover:text-[#e53a20]">
+                Other Services
                 </Link>
               </li>
             </ul>
@@ -73,16 +99,13 @@ const Footer = () => {
             <p className="text-gray-600 mb-2">651 310 0515</p>
             <p className="text-gray-600 mb-4">support@dwinfotech.in</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-[#e53a20]">
+              <a href="https://www.facebook.com/people/Dreamworks-Infotech-Pvt-Ltd/100054681223435/#" className="text-gray-600 hover:text-[#e53a20]">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-[#e53a20]">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-[#e53a20]">
+              <a href="https://www.linkedin.com/company/dreamworks-infotech-private-limited/" className="text-gray-600 hover:text-[#e53a20]">
                 <LinkedIn size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-[#e53a20]">
+              <a href="https://www.instagram.com/dreamworksinfotechrnc/" className="text-gray-600 hover:text-[#e53a20]">
                 <Instagram size={20} />
               </a>
             </div>

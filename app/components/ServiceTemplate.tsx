@@ -83,7 +83,7 @@ export default function ServiceTemplate({
   toolsAndTechnologies = [],
   sampleReports = [],
   certifications = [],
-  assessmentMethods,
+  assessmentMethods = { onsite: "", offsite: "" },
   testimonials = [],
   caseStudies = [],
   faq = [],
@@ -338,7 +338,7 @@ export default function ServiceTemplate({
         </motion.section>
 
         {/* Assessment Methods */}
-        {assessmentMethods && (
+        {(assessmentMethods?.onsite || assessmentMethods?.offsite) && (
           <motion.section
             initial="visible"
             animate="visible"

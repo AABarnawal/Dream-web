@@ -12,6 +12,7 @@ export default function Contact() {
     "entry.548481978": "",
     "entry.12387323": "",
     "entry.164714104": "",
+    "entry.1055894757": ""
   })
   const [captchaToken, setCaptchaToken] = useState("")
 
@@ -47,6 +48,7 @@ export default function Contact() {
         "entry.548481978": "",
         "entry.12387323": "",
         "entry.164714104": "",
+        "entry.1055894757": ""
       })
       setCaptchaToken("")
       window.grecaptcha.reset()
@@ -76,7 +78,24 @@ export default function Contact() {
                   name="entry.548481978"
                   value={formData["entry.548481978"]}
                   onChange={handleChange}
+                  placeholder="Enter Name"
                   required
+                  className="w-full dark:bg-gray-800 dark:text-white"
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Phone Number
+                </label>
+                <Input
+                  type="tel"
+                  id="phone"
+                  name="entry.1055894757"
+                  value={formData["entry.1055894757"]}
+                  onChange={handleChange}
+                  required
+                  pattern="[0-9]{10}"
+                  placeholder="Enter 10-digit phone number"
                   className="w-full dark:bg-gray-800 dark:text-white"
                 />
               </div>
@@ -88,12 +107,14 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="entry.12387323"
+                  placeholder="Enter email"
                   value={formData["entry.12387323"]}
                   onChange={handleChange}
                   required
                   className="w-full dark:bg-gray-800 dark:text-white"
                 />
               </div>
+             
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Message
@@ -126,7 +147,7 @@ export default function Contact() {
               </div>
               <div className="flex items-center">
                 <Phone className="w-6 h-6 text-[#e53a20] mr-4" />
-                <p className="text-gray-600 dark:text-gray-300">+91-9534042175 / +91-9703370653</p>
+                <p className="text-gray-600 dark:text-gray-300">+(651)310 0515</p>
               </div>
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-[#e53a20] mr-4" />
@@ -153,7 +174,7 @@ export default function Contact() {
         </div>
         <div className="mt-12 w-full aspect-video rounded-lg overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58588.59094314522!2d85.30270414781523!3d23.395924002150483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e16929bb0e6b%3A0x24bab294a93f6a37!2sDreamworks%20Infotech!5e0!3m2!1sen!2sin!4v1737113573601!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.4478989058434!2d85.31070377517659!3d23.408182178905314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e72aaf34bfb1%3A0xc4c9815d11c6086b!2sDreamworks%20Infotech%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1739949892837!5m2!1sen!2sin"
             className="w-full h-full"
             style={{ border: 0 }}
             allowFullScreen

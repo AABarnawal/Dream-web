@@ -20,6 +20,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Ankit Kumar" />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen dark:bg-black`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

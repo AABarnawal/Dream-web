@@ -7,12 +7,14 @@ import { Menu, X } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { ThemeToggle } from "./ThemeToggle"
+import { useTheme } from "next-themes"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
-  const [theme, setTheme] = useState<"light" | "dark">("light") // Initialize with "light"
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -22,6 +24,10 @@ const Header = () => {
   ]
 
   useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
     const updateScrolled = () => {
       setIsScrolled(window.scrollY > 10)
     }
@@ -29,37 +35,9 @@ const Header = () => {
     return () => window.removeEventListener("scroll", updateScrolled)
   }, [])
 
-  // Update the useEffect for theme initialization
-  useEffect(() => {
-    // Check if theme is stored in localStorage
-    const storedTheme = localStorage.getItem("theme") as "light" | "dark" | null
-    if (storedTheme) {
-      setTheme(storedTheme)
-      if (storedTheme === "dark") {
-        document.documentElement.classList.add("dark")
-      }
-    } else {
-      // Check system preference
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-      if (systemTheme) {
-        setTheme("dark")
-        document.documentElement.classList.add("dark")
-      } else {
-        setTheme("light")
-        document.documentElement.classList.remove("dark")
-      }
-    }
-  }, [])
-
-  // Update the theme effect
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark")
-    } else {
-      document.documentElement.classList.remove("dark")
-    }
-    localStorage.setItem("theme", theme)
-  }, [theme])
+  if (!mounted) {
+    return null
+  }
 
   return (
     <motion.header
@@ -71,7 +49,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link href="/" className="relative w-48 h-16">
             <Image
-              src={theme === "dark" ? "/assets/DW_dark.png" : "/assets/DW_light.png"}
+              src={resolvedTheme === "dark" ? "/assets/DW_dark.png" : "/assets/DW_light.png"}
               alt="Dreamworks Infotech Logo"
               fill
               className="object-contain"
@@ -93,7 +71,7 @@ const Header = () => {
                 </Link>
               ))}
             </div>
-            <ThemeToggle setTheme={setTheme} /> {/* Pass setTheme function */}
+            <ThemeToggle />
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -105,7 +83,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile menu */}
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
