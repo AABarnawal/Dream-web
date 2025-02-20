@@ -1,18 +1,31 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'UIDAI Compliance - ASA Audit | DreamWorks Infotech',
+  description: 'Ensure your ASA meets all UIDAI compliance standards with a comprehensive audit.',
+  openGraph: {
+    title: 'UIDAI Compliance - ASA Audit | DreamWorks Infotech',
+    description: 'Ensure your ASA meets all UIDAI compliance standards with a comprehensive audit.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/uidai-asa-audit',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function UIDAIComplianceASA_Audit() {
   return (
     <ServiceTemplate
       title="UIDAI Compliance - ASA Audit"
       description="Ensure your ASA (Authentication Service Agency) meets all UIDAI compliance standards with a comprehensive audit."
-      meaning="The UIDAI Compliance Audit for ASA (Authentication Service Agency) ensures that the agency’s authentication process adheres to UIDAI’s standards for secure and accurate Aadhaar-based authentication, ensuring the protection of sensitive personal data."
+      meaning="The UIDAI Compliance Audit for ASA (Authentication Service Agency) ensures that the agency's authentication process adheres to UIDAI's standards for secure and accurate Aadhaar-based authentication, ensuring the protection of sensitive personal data."
       importance={[
-        "Verifies the ASA’s compliance with UIDAI regulations, safeguarding Aadhaar authentication and data integrity.",
+        "Verifies the ASA's compliance with UIDAI regulations, safeguarding Aadhaar authentication and data integrity.",
         "Ensures that the Aadhaar authentication process is secure, preventing misuse of Aadhaar data.",
         "Identifies potential vulnerabilities in the authentication flow and data protection measures.",
         "Strengthens data protection controls and mitigates the risk of security breaches and data leaks.",
         "Ensures the ASA maintains compliance with industry regulations and protects user privacy.",
-        "Improves trust in the ASA’s ability to securely handle Aadhaar-based authentication processes.",
+        "Improves trust in the ASA's ability to securely handle Aadhaar-based authentication processes.",
       ]}
       trackRecord={{
         number: 28,
@@ -45,12 +58,12 @@ export default function UIDAIComplianceASA_Audit() {
         {
           name: "Operations Director",
           company: "TechSecure Ltd.",
-          quote: "Thanks to the detailed audit, we were able to enhance our data protection measures and ensure our ASA operation adheres to UIDAI guidelines, boosting our clients’ trust.",
+          quote: "Thanks to the detailed audit, we were able to enhance our data protection measures and ensure our ASA operation adheres to UIDAI guidelines, boosting our clients' trust.",
         },
         {
           name: "Security Head",
           company: "Digital Auth Co.",
-          quote: "This audit provided us with the roadmap to strengthen our Aadhaar authentication process, ensuring that we meet UIDAI’s standards and maintain compliance without any issues.",
+          quote: "This audit provided us with the roadmap to strengthen our Aadhaar authentication process, ensuring that we meet UIDAI's standards and maintain compliance without any issues.",
         },
       ]}
       caseStudies={[
@@ -74,7 +87,7 @@ export default function UIDAIComplianceASA_Audit() {
         {
           step: 2,
           title: "Evidence Collection",
-          description: "Collect necessary documents related to the ASA’s authentication process and data protection protocols.",
+          description: "Collect necessary documents related to the ASA's authentication process and data protection protocols.",
         },
         {
           step: 3,
@@ -84,12 +97,12 @@ export default function UIDAIComplianceASA_Audit() {
         {
           step: 4,
           title: "Reporting",
-          description: "Prepare an audit report that includes findings, gaps in compliance, and recommendations for improving the ASA’s processes.",
+          description: "Prepare an audit report that includes findings, gaps in compliance, and recommendations for improving the ASA's processes.",
         },
         {
           step: 5,
           title: "Final Level Clearance Report",
-          description: "Issue the final clearance report confirming the ASA’s compliance with UIDAI standards.",
+          description: "Issue the final clearance report confirming the ASA's compliance with UIDAI standards.",
         },
         {
           step: 6,
@@ -100,7 +113,7 @@ export default function UIDAIComplianceASA_Audit() {
       faq={[
         {
           question: "What does the ASA audit entail?",
-          answer: "The ASA audit involves reviewing the Authentication Service Agency’s compliance with UIDAI guidelines, focusing on the Aadhaar authentication process, data protection measures, and overall security practices.",
+          answer: "The ASA audit involves reviewing the Authentication Service Agency's compliance with UIDAI guidelines, focusing on the Aadhaar authentication process, data protection measures, and overall security practices.",
         },
         {
           question: "Why is the UIDAI ASA audit important?",

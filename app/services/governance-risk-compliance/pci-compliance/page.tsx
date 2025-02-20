@@ -1,5 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
 
+export const metadata: Metadata = {
+  title: 'PCI Compliance | DreamWorks Infotech',
+  description: 'Ensure your organization meets PCI DSS standards to protect cardholder data and maintain secure payment card transactions.',
+  openGraph: {
+    title: 'PCI Compliance | DreamWorks Infotech',
+    description: 'Ensure your organization meets PCI DSS standards to protect cardholder data and maintain secure payment card transactions.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/pci-compliance',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 export default function PCICompliance() {
   return (
     <ServiceTemplate
@@ -11,7 +23,7 @@ export default function PCICompliance() {
         "Reduces the risk of data breaches and financial fraud related to payment card transactions.",
         "Helps maintain customer trust by ensuring your organization meets the security standards required by payment card brands.",
         "Minimizes legal and financial liabilities by ensuring compliance with regulations and avoiding hefty fines for non-compliance.",
-        "Enhances your organization’s overall security posture by implementing a set of best practices for data security.",
+        "Enhances your organization's overall security posture by implementing a set of best practices for data security.",
         "Improves vendor relationships by demonstrating your commitment to maintaining secure environments and complying with PCI DSS.",
       ]}
       trackRecord={{

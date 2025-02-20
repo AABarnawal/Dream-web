@@ -1,4 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'RBI Compliance Audit - Information Systems (IS) | DreamWorks Infotech',
+  description: 'Ensure compliance with RBI regulations related to Information Systems by conducting a thorough audit.',
+  openGraph: {
+    title: 'RBI Compliance Audit - Information Systems (IS) | DreamWorks Infotech',
+    description: 'Ensure compliance with RBI regulations related to Information Systems by conducting a thorough audit.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/rbi-is-audits',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function RBIComplianceAudit() {
   return (
@@ -9,7 +22,7 @@ export default function RBIComplianceAudit() {
       importance={[
         "Ensures adherence to RBI regulations for IT systems in the financial sector.",
         "Mitigates risk by identifying vulnerabilities in system security and data protection.",
-        "Ensures data integrity and confidentiality within your organization’s financial systems.",
+        "Ensures data integrity and confidentiality within your organization's financial systems.",
         "Enhances risk management practices to safeguard against potential cyber threats.",
         "Improves system security, access controls, and overall information governance.",
         "Facilitates smooth audits by maintaining proper documentation and transparent processes.",
@@ -53,7 +66,7 @@ export default function RBIComplianceAudit() {
       caseStudies={[
         {
           title: "Banking Systems Compliance Enhancement",
-          description: "Assisted a major bank in strengthening their information security systems, ensuring compliance with RBI’s IT governance and risk management requirements.",
+          description: "Assisted a major bank in strengthening their information security systems, ensuring compliance with RBI's IT governance and risk management requirements.",
           link: "/case-studies/banking-systems-compliance-enhancement",
         },
         {

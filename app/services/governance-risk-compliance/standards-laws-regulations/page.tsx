@@ -1,4 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'Compliance with Standards, Laws & Regulations | DreamWorks Infotech',
+  description: 'Ensure your organization complies with industry standards, laws, and regulations.',
+  openGraph: {
+    title: 'Compliance with Standards, Laws & Regulations | DreamWorks Infotech',
+    description: 'Ensure your organization complies with industry standards, laws, and regulations.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/standards-laws-regulations',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function ComplianceWithStandardsLawsAndRegulations() {
   return (
@@ -8,7 +21,7 @@ export default function ComplianceWithStandardsLawsAndRegulations() {
       meaning="Compliance with standards, laws, and regulations involves adhering to legal, regulatory, and industry-specific requirements that govern an organization's operations. This ensures businesses meet legal obligations and best practices, reducing the risk of fines, legal disputes, and reputational damage."
       importance={[
         "Reduces the risk of legal penalties and fines due to non-compliance.",
-        "Enhances the organization’s reputation by demonstrating adherence to industry best practices.",
+        "Enhances the organization's reputation by demonstrating adherence to industry best practices.",
         "Mitigates business risks associated with non-compliance, including cybersecurity threats.",
         "Improves operational efficiency by aligning processes with regulatory requirements.",
         "Promotes trust with clients, stakeholders, and regulators by showcasing commitment to legal and ethical standards.",
@@ -100,7 +113,7 @@ export default function ComplianceWithStandardsLawsAndRegulations() {
         },
         {
           question: "How often should we conduct a compliance audit?",
-          answer: "It’s recommended to conduct compliance audits annually or whenever significant changes occur in your operations or the regulatory landscape.",
+          answer: "It's recommended to conduct compliance audits annually or whenever significant changes occur in your operations or the regulatory landscape.",
         },
         {
           question: "Can compliance audits be performed remotely?",
@@ -108,12 +121,17 @@ export default function ComplianceWithStandardsLawsAndRegulations() {
         },
         {
           question: "What happens if we fail to comply with applicable laws and regulations?",
-          answer: "Non-compliance can lead to legal penalties, fines, reputational damage, and operational disruptions. It’s essential to regularly assess and address compliance gaps.",
+          answer: "Non-compliance can lead to legal penalties, fines, reputational damage, and operational disruptions. It's essential to regularly assess and address compliance gaps.",
         },
-      ]}certifications={[
+      ]}
+      certifications={[
         { name: "CISA", imageUrl: "/certifications/cisa.png" },
         { name: "ISO 27001 LA", imageUrl: "/certifications/iso27001-la.jpeg" },
         { name: "ISO 27001 Implementer", imageUrl: "/certifications/iso27001-implementer.png" },
-      ]} benefits={[]} toolsAndTechnologies={[]} services={[]}    />
+      ]}
+      benefits={[]}
+      toolsAndTechnologies={[]}
+      services={[]}
+    />
   )
 }

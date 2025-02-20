@@ -1,17 +1,30 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'UIDAI Compliance - Sub-AUA/Sub-KUA Audit | DreamWorks Infotech',
+  description: 'Ensure your Sub-AUA or Sub-KUA is fully compliant with UIDAI standards through a comprehensive audit.',
+  openGraph: {
+    title: 'UIDAI Compliance - Sub-AUA/Sub-KUA Audit | DreamWorks Infotech',
+    description: 'Ensure your Sub-AUA or Sub-KUA is fully compliant with UIDAI standards through a comprehensive audit.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/uidai-sub-aua-sub-kua-audit',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function UIDAIComplianceSubAUA_SubKUA_Audit() {
   return (
     <ServiceTemplate
       title="UIDAI Compliance - Sub-AUA / Sub-KUA Audit"
       description="Ensure your Sub-AUA (Sub Authentication User Agency) or Sub-KUA (Sub KYC User Agency) is fully compliant with UIDAI standards through a comprehensive audit."
-      meaning="The UIDAI Compliance Audit for Sub-AUA/Sub-KUA ensures that your organization or third-party entities involved in Aadhaar authentication and KYC processes meet UIDAI’s stringent guidelines. The audit reviews the security measures, privacy controls, and overall compliance of Sub-AUA/Sub-KUA operations."
+      meaning="The UIDAI Compliance Audit for Sub-AUA/Sub-KUA ensures that your organization or third-party entities involved in Aadhaar authentication and KYC processes meet UIDAI's stringent guidelines. The audit reviews the security measures, privacy controls, and overall compliance of Sub-AUA/Sub-KUA operations."
       importance={[
-        "Verifies that your Sub-AUA/Sub-KUA operations are compliant with UIDAI’s regulations, preventing legal and operational risks.",
+        "Verifies that your Sub-AUA/Sub-KUA operations are compliant with UIDAI's regulations, preventing legal and operational risks.",
         "Helps protect sensitive Aadhaar-related data by evaluating the security and privacy measures in place.",
         "Ensures that Sub-AUA/Sub-KUA processes adhere to industry best practices for data handling and KYC.",
         "Identifies gaps in your compliance posture, providing clear recommendations for improvement.",
-        "Promotes transparency and trust in your organization’s use of Aadhaar data, which is crucial for maintaining customer confidence.",
+        "Promotes transparency and trust in your organization's use of Aadhaar data, which is crucial for maintaining customer confidence.",
         "Ensures continued access to Aadhaar-based services by maintaining and demonstrating compliance with UIDAI standards.",
       ]}
       trackRecord={{
@@ -50,12 +63,12 @@ export default function UIDAIComplianceSubAUA_SubKUA_Audit() {
       caseStudies={[
         {
           title: "UIDAI Compliance Audit for a Leading Sub-AUA Service Provider",
-          description: "Reviewed and improved the compliance practices of a major Sub-AUA service provider, ensuring they met UIDAI’s regulatory requirements and strengthened their data security posture.",
+          description: "Reviewed and improved the compliance practices of a major Sub-AUA service provider, ensuring they met UIDAI's regulatory requirements and strengthened their data security posture.",
           link: "/case-studies/uidai-compliance-sub-aua",
         },
         {
           title: "Enhancing Privacy Controls for a Sub-KUA Agency",
-          description: "Conducted an audit for a Sub-KUA agency to improve data privacy controls and ensure their KYC processes aligned with UIDAI’s compliance guidelines.",
+          description: "Conducted an audit for a Sub-KUA agency to improve data privacy controls and ensure their KYC processes aligned with UIDAI's compliance guidelines.",
           link: "/case-studies/sub-kua-privacy-controls",
         },
       ]}
@@ -83,7 +96,7 @@ export default function UIDAIComplianceSubAUA_SubKUA_Audit() {
         {
           step: 5,
           title: "Final Level Clearance Report",
-          description: "Issue a final clearance report confirming the Sub-AUA/Sub-KUA’s compliance with UIDAI regulations.",
+          description: "Issue a final clearance report confirming the Sub-AUA/Sub-KUA's compliance with UIDAI regulations.",
         },
         {
           step: 6,
@@ -94,7 +107,7 @@ export default function UIDAIComplianceSubAUA_SubKUA_Audit() {
       faq={[
         {
           question: "What is the difference between Sub-AUA/Sub-KUA and AUA/KUA?",
-          answer: "A Sub-AUA/Sub-KUA is a third-party entity that works under the primary AUA/KUA to perform Aadhaar authentication or KYC services. Both must comply with UIDAI’s standards, but Sub-AUA/Sub-KUA operations are usually more focused on specific tasks within the broader Aadhaar services framework.",
+          answer: "A Sub-AUA/Sub-KUA is a third-party entity that works under the primary AUA/KUA to perform Aadhaar authentication or KYC services. Both must comply with UIDAI's standards, but Sub-AUA/Sub-KUA operations are usually more focused on specific tasks within the broader Aadhaar services framework.",
         },
         {
           question: "Why should we conduct a UIDAI compliance audit for Sub-AUA/Sub-KUA?",

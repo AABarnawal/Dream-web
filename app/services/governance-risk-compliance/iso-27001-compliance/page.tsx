@@ -1,4 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'ISO 27001 Compliance - Audit and Implementation | DreamWorks Infotech',
+  description: 'Ensure your organization meets the highest standards for information security management by achieving ISO 27001 certification.',
+  openGraph: {
+    title: 'ISO 27001 Compliance - Audit and Implementation | DreamWorks Infotech',
+    description: 'Achieve ISO 27001 certification and enhance your information security management.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/iso-27001-compliance',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function ISO27001ComplianceAudit() {
   return (
@@ -42,7 +55,7 @@ export default function ISO27001ComplianceAudit() {
         {
           name: "Compliance Officer",
           company: "TechSolutions Ltd.",
-          quote: "Thanks to Dreamworks Infotech’s guidance, we successfully achieved ISO 27001 certification and now have a robust framework for managing information security.",
+          quote: "Thanks to Dreamworks Infotech's guidance, we successfully achieved ISO 27001 certification and now have a robust framework for managing information security.",
         },
         {
           name: "CTO",
@@ -97,7 +110,7 @@ export default function ISO27001ComplianceAudit() {
       faq={[
         {
           question: "How long does the ISO 27001 audit take?",
-          answer: "The audit process typically takes 4-6 weeks, depending on the complexity of your organization’s information security systems.",
+          answer: "The audit process typically takes 4-6 weeks, depending on the complexity of your organization's information security systems.",
         },
         {
           question: "What are the main benefits of achieving ISO 27001 certification?",

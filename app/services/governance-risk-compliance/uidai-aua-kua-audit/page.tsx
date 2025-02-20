@@ -1,15 +1,28 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'UIDAI Compliance - AUA/KUA Audit | DreamWorks Infotech',
+  description: 'Ensure your organization meets UIDAI compliance standards for AUA and KUA through an in-depth audit.',
+  openGraph: {
+    title: 'UIDAI Compliance - AUA/KUA Audit | DreamWorks Infotech',
+    description: 'Ensure your organization meets UIDAI compliance standards for AUA and KUA through an in-depth audit.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/uidai-aua-kua-audit',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function UIDAIComplianceAUA_KUA_Audit() {
   return (
     <ServiceTemplate
       title="UIDAI Compliance - AUA / KUA Audit"
       description="Ensure your organization meets the UIDAI compliance standards for AUA (Authentication User Agency) and KUA (KYC User Agency) through an in-depth audit."
-      meaning="The UIDAI Compliance Audit for AUA/KUA focuses on verifying your organization’s adherence to UIDAI standards, particularly regarding data privacy, security controls, and compliance with KYC (Know Your Customer) processes. This audit ensures that your organization is properly registered and compliant with the relevant UIDAI guidelines."
+      meaning="The UIDAI Compliance Audit for AUA/KUA focuses on verifying your organization's adherence to UIDAI standards, particularly regarding data privacy, security controls, and compliance with KYC (Know Your Customer) processes. This audit ensures that your organization is properly registered and compliant with the relevant UIDAI guidelines."
       importance={[
         "Ensures compliance with UIDAI standards for AUA/KUA, preventing legal and regulatory penalties.",
         "Improves data privacy and security measures to protect sensitive customer data.",
-        "Verifies the integrity and accuracy of your organization’s KYC processes.",
+        "Verifies the integrity and accuracy of your organization's KYC processes.",
         "Identifies potential gaps or risks in the security controls surrounding Aadhaar data handling.",
         "Strengthens customer trust by ensuring that your organization meets all UIDAI compliance requirements.",
         "Enables continued access to Aadhaar-based services by ensuring that AUA/KUA registration and compliance is maintained.",
@@ -61,7 +74,7 @@ export default function UIDAIComplianceAUA_KUA_Audit() {
         },
         {
           title: "KYC Process Assessment for FinTech Startup",
-          description: "Reviewed and improved the KYC processes for a growing FinTech startup, ensuring their operations align with UIDAI’s stringent requirements for AUA/KUA registration.",
+          description: "Reviewed and improved the KYC processes for a growing FinTech startup, ensuring their operations align with UIDAI's stringent requirements for AUA/KUA registration.",
           link: "/case-studies/kyc-assessment-fintech-startup",
         },
       ]}
@@ -111,8 +124,8 @@ export default function UIDAIComplianceAUA_KUA_Audit() {
           answer: "It is advisable to perform this audit annually or whenever there are significant changes in your systems or processes related to Aadhaar authentication or KYC procedures.",
         },
         {
-          question: "What happens if we fail to comply with UIDAI’s guidelines?",
-          answer: "Non-compliance with UIDAI’s regulations can result in penalties, legal consequences, and the loss of access to Aadhaar-based services, which could severely impact your organization’s operations.",
+          question: "What happens if we fail to comply with UIDAI's guidelines?",
+          answer: "Non-compliance with UIDAI's regulations can result in penalties, legal consequences, and the loss of access to Aadhaar-based services, which could severely impact your organization's operations.",
         },
       ]} services={[]} benefits={[]} toolsAndTechnologies={[]}    />
   )

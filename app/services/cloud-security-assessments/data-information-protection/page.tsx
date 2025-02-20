@@ -1,5 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
 
+export const metadata: Metadata = {
+  title: 'Data & Information Protection | DreamWorks Infotech',
+  description: 'A process of evaluating cloud environments for vulnerabilities, misconfigurations, and security risks.',
+  openGraph: {
+    title: 'Data & Information Protection | DreamWorks Infotech',
+    description: 'Evaluate Data & Information Protection for vulnerabilities and security risks.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/cloud-security-assessments/data-information-protection',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 export default function DataInformationProtection() {
   return (
     <ServiceTemplate
@@ -56,39 +68,33 @@ export default function DataInformationProtection() {
         {
           name: "Head of Security",
           company: "FinSecure Inc.",
-          quote:
-            "The data protection assessment by Dreamworks Infotech helped us improve our data security posture and meet compliance requirements effectively.",
+          quote: "The data protection assessment by Dreamworks Infotech helped us improve our data security posture and meet compliance requirements effectively.",
         },
         {
           name: "Chief Compliance Officer",
           company: "HealthTech Solutions",
-          quote:
-            "Dreamworks Infotech’s thorough audit helped us secure sensitive patient data, ensuring compliance with HIPAA regulations and preventing data breaches.",
+          quote: "Dreamworks Infotech’s thorough audit helped us secure sensitive patient data, ensuring compliance with HIPAA regulations and preventing data breaches.",
         },
         {
           name: "CIO",
           company: "Retail Enterprises",
-          quote:
-            "Their data protection services were instrumental in securing our customer data and enhancing our ability to respond to security incidents.",
+          quote: "Their data protection services were instrumental in securing our customer data and enhancing our ability to respond to security incidents.",
         },
         {
           name: "Data Security Manager",
           company: "TechWave",
-          quote:
-            "Thanks to the comprehensive data protection evaluation, we’ve strengthened our defenses and streamlined our incident response protocols.",
+          quote: "Thanks to the comprehensive data protection evaluation, we’ve strengthened our defenses and streamlined our incident response protocols.",
         },
       ]}
       caseStudies={[
         {
           title: "Retail Sector Data Protection",
-          description:
-            "Enhanced data protection and privacy measures for a large retail chain, ensuring compliance with GDPR and preventing customer data breaches.",
+          description: "Enhanced data protection and privacy measures for a large retail chain, ensuring compliance with GDPR and preventing customer data breaches.",
           link: "/case-studies/retail-data-protection",
         },
         {
           title: "Healthcare Data Security Upgrade",
-          description:
-            "Implemented robust encryption and access control policies for a healthcare provider, safeguarding sensitive patient information.",
+          description: "Implemented robust encryption and access control policies for a healthcare provider, safeguarding sensitive patient information.",
           link: "/case-studies/healthcare-data-security",
         },
       ]}
@@ -132,25 +138,20 @@ export default function DataInformationProtection() {
       faq={[
         {
           question: "How often should data protection assessments be conducted?",
-          answer:
-            "It is recommended to perform data protection assessments annually or whenever major changes occur in your data handling procedures, systems, or regulations.",
+          answer: "It is recommended to perform data protection assessments annually or whenever major changes occur in your data handling procedures, systems, or regulations.",
         },
         {
           question: "Can this service be performed remotely?",
-          answer:
-            "Yes, we offer remote assessments with secure access to your data protection systems, ensuring minimal disruption to your operations.",
+          answer: "Yes, we offer remote assessments with secure access to your data protection systems, ensuring minimal disruption to your operations.",
         },
         {
           question: "What is the process for handling data breaches?",
-          answer:
-            "Our incident response plan includes identifying the breach, mitigating the impact, notifying relevant authorities, and improving data protection mechanisms to prevent future breaches.",
+          answer: "Our incident response plan includes identifying the breach, mitigating the impact, notifying relevant authorities, and improving data protection mechanisms to prevent future breaches.",
         },
         {
           question: "How do you ensure compliance with data protection laws?",
-          answer:
-            "We evaluate your data protection practices against the latest legal and regulatory requirements, including GDPR, HIPAA, and PCI DSS, and provide actionable recommendations to ensure compliance.",
+          answer: "We evaluate your data protection practices against the latest legal and regulatory requirements, including GDPR, HIPAA, and PCI DSS, and provide actionable recommendations to ensure compliance.",
         },
-      ]}
-    />
+      ]} certifications={[]}    />
   )
 }

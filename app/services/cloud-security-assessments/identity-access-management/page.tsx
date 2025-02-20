@@ -1,4 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'Identity & Access Management | DreamWorks Infotech',
+  description: 'A framework ensuring that the right individuals have access to the right resources at the right times.',
+  openGraph: {
+    title: 'Identity & Access Management | DreamWorks Infotech',
+    description: 'A framework ensuring that the right individuals have access to the right resources at the right times.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/cloud-security-assessments/identity-access-management',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function IdentityAccessManagement() {
   return (

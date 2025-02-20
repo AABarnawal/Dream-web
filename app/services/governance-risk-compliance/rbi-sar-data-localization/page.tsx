@@ -1,4 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: "RBI Compliance Audit - SAR Data Localization | DreamWorks Infotech",
+  description: "Ensure your organization's data storage and processing meet RBI guidelines for data localization.",
+  openGraph: {
+    title: "RBI Compliance Audit - SAR Data Localization | DreamWorks Infotech",
+    description: "Ensure your organization's data storage and processing meet RBI guidelines for data localization.",
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/rbi-sar-data-localization',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function RBIComplianceAuditSARDataLocalization() {
   return (
@@ -7,12 +20,12 @@ export default function RBIComplianceAuditSARDataLocalization() {
       description="Ensure your organization's data storage and processing meet RBI guidelines for data localization through a comprehensive audit."
       meaning="The RBI Compliance Audit for SAR (Systemically Important Banks) Data Localization focuses on verifying compliance with the Reserve Bank of India's guidelines on data localization. The audit reviews your organization's data storage and processing practices, encryption, and protection measures to ensure adherence to local data storage requirements."
       importance={[
-        "Ensures compliance with RBI’s data localization regulations to avoid penalties.",
+        "Ensures compliance with RBI's data localization regulations to avoid penalties.",
         "Protects sensitive data by ensuring data encryption and proper protection during storage and processing.",
         "Verifies that data is stored within India as per RBI's data localization guidelines.",
         "Minimizes risks associated with cross-border data transfers and improves data sovereignty.",
-        "Enhances your organization’s trustworthiness with stakeholders by ensuring compliance with national regulations.",
-        "Strengthens your organization’s data security posture and regulatory standing by maintaining proper localization practices.",
+        "Enhances your organization's trustworthiness with stakeholders by ensuring compliance with national regulations.",
+        "Strengthens your organization's data security posture and regulatory standing by maintaining proper localization practices.",
       ]}
       trackRecord={{
         number: 85,
@@ -53,7 +66,7 @@ export default function RBIComplianceAuditSARDataLocalization() {
       caseStudies={[
         {
           title: "Data Localization Compliance for a Leading Bank",
-          description: "Conducted a SAR data localization audit for a prominent bank, ensuring compliance with RBI’s data localization requirements and improving data protection protocols.",
+          description: "Conducted a SAR data localization audit for a prominent bank, ensuring compliance with RBI's data localization requirements and improving data protection protocols.",
           link: "/case-studies/data-localization-compliance-leading-bank",
         },
         {

@@ -1,4 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'container-security-assessment | DreamWorks Infotech',
+  description: 'A process of evaluating cloud environments for vulnerabilities, misconfigurations, and security risks.',
+  openGraph: {
+    title: 'container-security-assessment | DreamWorks Infotech',
+    description: 'Evaluate container-security-assessment for vulnerabilities and security risks.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/cloud-security-assessments/container-security-assessment',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function ContainerSecurityAssessment() {
   return (

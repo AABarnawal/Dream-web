@@ -1,5 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
 
+export const metadata: Metadata = {
+  title: 'Kubernetes Security Assessment | DreamWorks Infotech',
+  description: 'A security evaluation of Kubernetes clusters to identify vulnerabilities and ensure compliance.',
+  openGraph: {
+    title: 'Kubernetes Security Assessment | DreamWorks Infotech',
+    description: 'A security evaluation of Kubernetes clusters to identify vulnerabilities and ensure compliance.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/cloud-security-assessments/kubernetes-security-assessment',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 export default function KubernetesSecurityAssessment() {
   return (
     <ServiceTemplate

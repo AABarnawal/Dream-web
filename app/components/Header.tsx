@@ -49,7 +49,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link href="/" className="relative w-48 h-16">
             <Image
-              src={resolvedTheme === "dark" ? "/assets/DW_dark.png" : "/assets/DW_light.png"}
+              src={resolvedTheme === "dark" ? "/assets/DW_dark.webp" : "/assets/DW_light.webp"}
               alt="Dreamworks Infotech Logo"
               fill
               className="object-contain"

@@ -1,11 +1,24 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'Third Party Risk Management (TPRM) | DreamWorks Infotech',
+  description: 'Identify, assess, and manage risks associated with third-party vendors to ensure the security and compliance of your business.',
+  openGraph: {
+    title: 'Third Party Risk Management (TPRM) | DreamWorks Infotech',
+    description: 'Identify, assess, and manage risks associated with third-party vendors to ensure the security and compliance of your business.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/third-party-risk-management',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function ThirdPartyRiskManagement() {
   return (
     <ServiceTemplate
       title="Third Party Risk Management (TPRM)"
       description="Identify, assess, and manage risks associated with third-party vendors to ensure the security and compliance of your business."
-      meaning="Third-Party Risk Management (TPRM) is a comprehensive approach to identifying, evaluating, and mitigating risks that arise from your organization’s relationships with third-party vendors, suppliers, and service providers. It ensures that external partners meet the necessary compliance and security standards to avoid risks such as data breaches or operational disruptions."
+      meaning="Third-Party Risk Management (TPRM) is a comprehensive approach to identifying, evaluating, and mitigating risks that arise from your organization's relationships with third-party vendors, suppliers, and service providers. It ensures that external partners meet the necessary compliance and security standards to avoid risks such as data breaches or operational disruptions."
       importance={[
         "Ensures the security and integrity of your supply chain by assessing the risks associated with third-party vendors.",
         "Helps mitigate financial, operational, and reputational risks by thoroughly evaluating vendor risks before forming partnerships.",
@@ -102,7 +115,7 @@ export default function ThirdPartyRiskManagement() {
       faq={[
         {
           question: "What is Third-Party Risk Management?",
-          answer: "Third-Party Risk Management (TPRM) is the process of assessing, monitoring, and mitigating risks posed by external vendors or partners that may impact your organization’s operations, security, and compliance.",
+          answer: "Third-Party Risk Management (TPRM) is the process of assessing, monitoring, and mitigating risks posed by external vendors or partners that may impact your organization's operations, security, and compliance.",
         },
         {
           question: "Why is Third-Party Risk Management important?",
@@ -110,7 +123,7 @@ export default function ThirdPartyRiskManagement() {
         },
         {
           question: "How often should Third-Party Risk Assessments be conducted?",
-          answer: "It is recommended to conduct third-party risk assessments at least annually or whenever significant changes occur in vendor relationships, regulatory standards, or your organization’s operations.",
+          answer: "It is recommended to conduct third-party risk assessments at least annually or whenever significant changes occur in vendor relationships, regulatory standards, or your organization's operations.",
         },
         {
           question: "How can Third-Party Risk Management benefit my company?",

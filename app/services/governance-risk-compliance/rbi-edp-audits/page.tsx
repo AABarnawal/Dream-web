@@ -1,5 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
 
+export const metadata: Metadata = {
+  title: 'RBI Compliance Audit - Electronic Data Processing (EDP) | DreamWorks Infotech',
+  description: 'Ensure your organization meets the highest standards for information security management by achieving ISO 27001 certification.',
+  openGraph: {
+    title: 'RBI Compliance Audit | DreamWorks Infotech',
+    description: 'Achieve RBI Compliance Audit certification and enhance your information security management.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/governance-risk-compliance/rbi-edp-audits',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 export default function RBIComplianceAuditEDP() {
   return (
     <ServiceTemplate

@@ -1,4 +1,17 @@
+import { Metadata } from 'next'
 import ServiceTemplate from "@/app/components/ServiceTemplate"
+
+export const metadata: Metadata = {
+  title: 'Configuration & Hardening Reviews | DreamWorks Infotech',
+  description: 'Ensure your systems are configured securely and hardened against potential threats.',
+  openGraph: {
+    title: 'Configuration & Hardening Reviews | DreamWorks Infotech',
+    description: 'Ensure your systems are configured securely and hardened against potential threats.',
+    type: 'website',
+    url: 'https://dwinfotech.in/services/other-services/configuration-hardening-reviews',
+    siteName: 'DreamWorks Infotech',
+  }
+}
 
 export default function ConfigurationHardeningReviews() {
   return (
