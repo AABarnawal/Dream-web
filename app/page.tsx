@@ -44,7 +44,7 @@ export default function Home() {
           title="Advanced Cybersecurity Solutions"
           description="Protect your digital assets with our state-of-the-art security services. Our team of experts uses cutting-edge technology to safeguard your business from evolving cyber threats."
           imageUrl="/assets/about-image.webp"
-          linkUrl="/services/information-security"
+          linkUrl="/services"
         />
       </AnimatedSection>
       <AnimatedSection delay={0.4}>

@@ -16,9 +16,6 @@ const clients = [
   { name: 'CISF', logo: '/clients/cisf.webp' },
   { name: 'nepa', logo: '/clients/nepa.webp' },
   { name: 'mrb', logo: '/clients/mrb.webp' },
-  // { name: 'jscb', logo: '/clients/jscb.jpg' },
-  // { name: 'phsc', logo: '/clients/phsc.png' },
-  
 ]
 
 export function ClientLogos() {
@@ -40,8 +37,9 @@ export function ClientLogos() {
                   src={client.logo}
                   alt={`${client.name} logo`}
                   fill
-                  sizes="160px"
-                  priority
+                  sizes="(max-width: 600px) 100px, (max-width: 1200px) 140px, 160px"
+                  quality={80} // Compresses image while maintaining quality
+                  loading="lazy" // Ensures better performance
                 />
               </div>
             </div>
@@ -51,4 +49,3 @@ export function ClientLogos() {
     </section>
   )
 }
-
