@@ -124,7 +124,14 @@ export default function RBIComplianceAuditSARDataLocalization() {
           question: "How often should we perform an RBI Data Localization Audit?",
           answer: "It is recommended to conduct this audit annually or whenever there are significant changes in data storage and processing systems to maintain compliance with evolving regulations.",
         },
-      ]} benefits={[]} toolsAndTechnologies={[]} services={[]} certifications={[
+      ]}
+      benefits={[]}
+      toolsAndTechnologies={[]}
+      servicesImage={{
+        url: "/assets/services/forensic.webp",
+        description: "RBI Compliance Audit - SAR Data Localization"
+      }}
+      certifications={[
         { name: "CISA", imageUrl: "/certifications/cisa.png" },
         { name: "ISO 27001 LA", imageUrl: "/certifications/iso27001-la.jpeg" },
         { name: "ISO 27001 Implementer", imageUrl: "/certifications/iso27001-implementer.png" },

@@ -30,14 +30,10 @@ export default function KubernetesSecurityAssessment() {
         number: 150,
         description: "Kubernetes clusters assessed for security",
       }}
-      services={[
-        "Scope of Assessment",
-        "Kubernetes Security Controls",
-        "Misconfigurations in Kubernetes",
-        "Vulnerabilities Identified",
-        "Recommendations for Security",
-        "Conclusion",
-      ]}
+      servicesImage={{
+        url: "/assets/services/kb.webp",
+        description: "Kubernetes Security Assessment"
+      }}
       benefits={[
         "Improved security of Kubernetes clusters",
         "Enhanced compliance with Kubernetes security standards",

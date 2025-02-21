@@ -20,6 +20,7 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Contact", href: "/contact" },
     { name: "Service", href: "/services" },
+    { name: "Company", href: "/company" },
     { name: "Career", href: "/career" },
   ]
 
@@ -49,7 +50,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link href="/" className="relative w-48 h-16">
             <Image
-              src={resolvedTheme === "dark" ? "/assets/DW_dark.webp" : "/assets/DW_light.webp"}
+              src={resolvedTheme === "dark" ? "/assets/logo/DW_dark.webp" : "/assets/logo/DW_light.webp"}
               alt="Dreamworks Infotech Logo"
               fill
               className="object-contain"

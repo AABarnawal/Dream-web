@@ -131,7 +131,10 @@ export default function ComplianceWithStandardsLawsAndRegulations() {
       ]}
       benefits={[]}
       toolsAndTechnologies={[]}
-      services={[]}
+      servicesImage={{
+        url: "/assets/services/firewall.webp",
+        description: "Compliance with Standards, Laws, and Regulations"
+      }}
     />
   )
 }

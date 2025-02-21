@@ -127,6 +127,13 @@ export default function UIDAIComplianceASA_Audit() {
           question: "How long does the UIDAI ASA compliance audit take?",
           answer: "Typically, the audit process takes 2 to 4 weeks, depending on the complexity and size of the ASA operation, including the review, reporting, and follow-up meetings.",
         },
-      ]} services={[]} benefits={[]} toolsAndTechnologies={[]}    />
+      ]}
+      servicesImage={{
+        url: "/assets/services/aadhar.webp",
+        description: "UIDAI Compliance - ASA Audit"
+      }}
+      benefits={[]}
+      toolsAndTechnologies={[]}
+    />
   )
 }

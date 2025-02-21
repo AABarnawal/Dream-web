@@ -16,26 +16,40 @@ export const metadata: Metadata = {
 export default function ConfigurationHardeningReviews() {
   return (
     <ServiceTemplate
-      title="Configuration / Hardening Reviews"
-      description="Ensure your systems are configured securely and hardened against potential threats."
-      whatIs="Configuration and Hardening Reviews involve a comprehensive assessment of system configurations to identify and remediate security weaknesses, ensuring that all systems are configured according to industry best practices and security standards to minimize potential attack surfaces."
-      services={[
+      title="Configuration Hardening Reviews"
+      description="Assess and enhance the security of your system configurations to protect against vulnerabilities."
+      meaning="Configuration Hardening Reviews involve evaluating system configurations to ensure they are secure and comply with industry best practices."
+      servicesImage={{
+        url: "/assets/services/hardening.webp",
+        description: "Configuration Hardening Reviews"
+      }}
+      importance={[
         "Operating system hardening assessment",
-        "Application and database configuration review",
-        "Network device configuration analysis",
-        "Cloud service configuration evaluation",
-        "Compliance checking against industry benchmarks (CIS, NIST, etc.)",
-        "Automated configuration management tool implementation",
+        "Application configuration review",
+        "Network device configuration review",
+        "Database configuration hardening",
+        "Cloud service configuration assessment",
+        "Compliance with security benchmarks (CIS, NIST, etc.)",
       ]}
       benefits={[
-        "Reduced attack surface through proper system hardening",
-        "Improved system stability and performance",
-        "Enhanced compliance with security standards and regulations",
-        "Decreased risk of successful cyber attacks",
-        "Standardized and consistent security configurations across the organization",
-        "Easier maintenance and troubleshooting of systems",
+        "Reduced attack surface by eliminating unnecessary services",
+        "Improved compliance with security standards",
+        "Enhanced overall system security posture",
+        "Identification of misconfigurations and vulnerabilities",
+        "Increased resilience against cyber threats",
+        "Better resource allocation for security investments",
       ]}
-    />
+      toolsAndTechnologies={[
+        { name: "CIS-CAT", image: "/tools/cis-cat.png" },
+        { name: "Nessus", image: "/tools/nessus.png" },
+        { name: "OpenVAS", image: "/tools/openvas.png" },
+      ]} sampleReports={[]}  
+      certifications={[
+        { name: "CISA", imageUrl: "/certifications/cisa.png" },
+        { name: "CEH", imageUrl: "/certifications/ceh.png" },
+        { name: "ISO/IEC 27001 ASSOCIATE", imageUrl: "/certifications/iso-27001.png" },
+      ]}
+       testimonials={[]} caseStudies={[]} faq={[]} serviceTimeline={[]}    />
   )
 }
 

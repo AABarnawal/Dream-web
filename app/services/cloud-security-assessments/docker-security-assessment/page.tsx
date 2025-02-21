@@ -30,14 +30,10 @@ export default function DockerSecurityAssessment() {
         number: 200,
         description: "Docker environments assessed for security",
       }}
-      services={[
-        "Scope of Assessment",
-        "Docker Configuration Review",
-        "Container Security Best Practices",
-        "Vulnerabilities Identified",
-        "Recommendations for Hardening",
-        "Conclusion",
-      ]}
+      servicesImage={{
+        url: "/assets/services/docker.webp",
+        description: "Docker Security Assessment"
+      }}
       benefits={[
         "Improved security posture for Docker environments",
         "Prevention of container breakout and unauthorized access",

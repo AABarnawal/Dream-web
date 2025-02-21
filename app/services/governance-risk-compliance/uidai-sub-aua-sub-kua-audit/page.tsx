@@ -121,10 +121,13 @@ export default function UIDAIComplianceSubAUA_SubKUA_Audit() {
           question: "How long does the UIDAI compliance audit take?",
           answer: "The duration of the audit depends on the size and complexity of your Sub-AUA/Sub-KUA operations. Typically, the audit process takes between 2 to 4 weeks, including the reporting and follow-up meetings.",
         },
-      ]} benefits={[]} toolsAndTechnologies={[]} services={[]} certifications={[
+      ]} benefits={[]} toolsAndTechnologies={[]} certifications={[
         { name: "CISA", imageUrl: "/certifications/cisa.png" },
         { name: "ISO 27001 LA", imageUrl: "/certifications/iso27001-la.jpeg" },
         { name: "ISO 27001 Implementer", imageUrl: "/certifications/iso27001-implementer.png" },
-      ]}   />
+      ]} servicesImage={{
+        url: "/assets/services/uidai.webp",
+        description: "UIDAI Compliance - Sub-AUA/Sub-KUA Audit"
+      }}   />
   )
 }

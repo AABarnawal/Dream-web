@@ -129,6 +129,13 @@ export default function ISO27001ComplianceAudit() {
         { name: "CISA", imageUrl: "/certifications/cisa.png" },
         { name: "ISO 27001 LA", imageUrl: "/certifications/iso27001-la.jpeg" },
         { name: "ISO 27001 Implementer", imageUrl: "/certifications/iso27001-implementer.png" },
-      ]} benefits={[]} toolsAndTechnologies={[]} services={[]}    />
+      ]}
+      benefits={[]}
+      toolsAndTechnologies={[]}
+      servicesImage={{
+        url: "/assets/services/compliance.webp",
+        description: "ISO 27001 Compliance - Audit and Implementation"
+      }}
+    />
   )
 }

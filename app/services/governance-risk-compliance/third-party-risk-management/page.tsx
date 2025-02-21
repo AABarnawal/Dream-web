@@ -129,6 +129,22 @@ export default function ThirdPartyRiskManagement() {
           question: "How can Third-Party Risk Management benefit my company?",
           answer: "TPRM helps protect your company by identifying and mitigating potential risks in vendor relationships, ensuring compliance, and improving overall security and operational resilience.",
         },
-      ]} services={[]} benefits={[]} toolsAndTechnologies={[]}    />
+      ]}
+      servicesImage={{
+        url: "/assets/services/thirdparty.webp",
+        description: "Third Party Risk Management (TPRM)"
+      }}
+      benefits={[
+        "Reduced vendor-related risks",
+        "Enhanced compliance monitoring",
+        "Better vendor management",
+        "Improved security posture",
+        "Cost optimization"
+      ]}
+      toolsAndTechnologies={[
+        { name: "Vendor Risk Assessment", image: "/tools/vendor-risk.png" },
+        { name: "Compliance Monitor", image: "/tools/compliance.png" }
+      ]}
+    />
   )
 }

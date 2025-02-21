@@ -31,14 +31,10 @@ export default function ContainerSecurityAssessment() {
         number: 180,
         description: "Containerized applications assessed for security",
       }}
-      services={[
-        "Scope of Assessment",
-        "Container Security Best Practices",
-        "Vulnerabilities in Containerized Applications",
-        "Configuration Review",
-        "Recommendations for Security",
-        "Conclusion",
-      ]}
+      servicesImage={{
+        url: "/assets/services/container.webp",
+        description: "Container Security Assessment"
+      }} 
       benefits={[
         "Improved security posture for containerized environments",
         "Reduced risk of supply chain attacks",

@@ -31,15 +31,10 @@ export default function IdentityAccessManagement() {
         number: 150,
         description: "IAM assessments conducted for organizations worldwide",
       }}
-      services={[
-        "IAM Framework Review",
-        "Access Control Policies and Procedures",
-        "Authentication and Authorization Mechanisms",
-        "User Privilege Management",
-        "Risk Analysis",
-        "Recommendations",
-        "Conclusion",
-      ]}
+      servicesImage={{
+        url: "/assets/services/identity.webp",
+        description: "Identity & Access Management"
+      }} 
       benefits={[
         "Improved security by ensuring proper access controls",
         "Reduced risk of insider threats and data breaches",

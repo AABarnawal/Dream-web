@@ -127,6 +127,23 @@ export default function PCICompliance() {
           question: "What happens if my organization fails PCI compliance?",
           answer: "Failing PCI compliance can lead to penalties, fines, and the suspension of payment processing services. Additionally, failure to comply increases the risk of data breaches and loss of customer trust.",
         },
-      ]} services={[]} benefits={[]} toolsAndTechnologies={[]}    />
+      ]}
+      servicesImage={{
+        url: "/assets/services/pci.webp",
+        description: "PCI DSS Compliance Audit and Implementation"
+      }}
+      benefits={[
+        "Enhanced data security",
+        "Reduced risk of breaches",
+        "Improved customer trust",
+        "Compliance with industry standards",
+        "Prevention of financial penalties"
+      ]}
+      toolsAndTechnologies={[
+        { name: "Nessus", image: "/tools/nessus.png" },
+        { name: "Qualys", image: "/tools/qualys.png" },
+        { name: "Acunetix", image: "/tools/acunetix.png" }
+      ]}
+    />
   )
 }

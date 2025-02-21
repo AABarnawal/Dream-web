@@ -17,7 +17,7 @@ export default function RBIComplianceAuditEDP() {
     <ServiceTemplate
       title="RBI Compliance Audit - Electronic Data Processing (EDP)"
       description="Ensure your Electronic Data Processing (EDP) systems meet RBI regulations through a thorough audit, identifying risks and improving security measures for data integrity."
-      meaning="The RBI Compliance Audit for Electronic Data Processing (EDP) focuses on assessing the effectiveness of your organization’s EDP systems in relation to the Reserve Bank of India's regulations. The audit reviews IT infrastructure, access control mechanisms, data backup and recovery procedures, and security measures to ensure compliance and mitigate risks associated with electronic data processing."
+      meaning="The RBI Compliance Audit for Electronic Data Processing (EDP) focuses on assessing the effectiveness of your organization's EDP systems in relation to the Reserve Bank of India's regulations. The audit reviews IT infrastructure, access control mechanisms, data backup and recovery procedures, and security measures to ensure compliance and mitigate risks associated with electronic data processing."
       importance={[
         "Ensures that EDP systems meet RBI's standards for security and risk management.",
         "Identifies risks in IT infrastructure and implements effective mitigation strategies.",
@@ -65,7 +65,7 @@ export default function RBIComplianceAuditEDP() {
       caseStudies={[
         {
           title: "EDP System Compliance for Financial Institution",
-          description: "Conducted an EDP audit for a financial institution, improving data security and ensuring adherence to RBI’s compliance requirements.",
+          description: "Conducted an EDP audit for a financial institution, improving data security and ensuring adherence to RBI's compliance requirements.",
           link: "/case-studies/edp-system-compliance-financial-institution",
         },
         {
@@ -109,7 +109,7 @@ export default function RBIComplianceAuditEDP() {
       faq={[
         {
           question: "What is the purpose of an RBI Compliance Audit for EDP systems?",
-          answer: "The purpose is to ensure that your electronic data processing systems meet RBI’s security standards, safeguarding sensitive data and maintaining regulatory compliance.",
+          answer: "The purpose is to ensure that your electronic data processing systems meet RBI's security standards, safeguarding sensitive data and maintaining regulatory compliance.",
         },
         {
           question: "How often should we perform an RBI EDP compliance audit?",
@@ -123,10 +123,18 @@ export default function RBIComplianceAuditEDP() {
           question: "What happens if our EDP systems are found non-compliant?",
           answer: "Non-compliance may result in regulatory penalties and potential security vulnerabilities. The audit provides recommendations to help remediate gaps and achieve compliance.",
         },
-      ]} benefits={[]} toolsAndTechnologies={[]} services={[]} certifications={[
+      ]}
+      benefits={[]}
+      toolsAndTechnologies={[]}
+      servicesImage={{
+        url: "/assets/services/hardening.webp",
+        description: "RBI Compliance Audit - Electronic Data Processing (EDP)"
+      }}
+      certifications={[
         { name: "CISA", imageUrl: "/certifications/cisa.png" },
         { name: "ISO 27001 LA", imageUrl: "/certifications/iso27001-la.jpeg" },
         { name: "ISO 27001 Implementer", imageUrl: "/certifications/iso27001-implementer.png" },
-      ]}   />
+      ]}
+    />
   )
 }

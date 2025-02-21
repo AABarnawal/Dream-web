@@ -5,8 +5,12 @@ export default function DatabaseReview() {
     <ServiceTemplate
       title="Database Review"
       description="Assess and enhance the security of your database systems to protect sensitive data."
-      whatIs="A Database Review is a comprehensive assessment of database systems, focusing on security configurations, access controls, data protection mechanisms, and overall database management practices to identify vulnerabilities and ensure the protection of sensitive data."
-      services={[
+      meaning="A Database Review is a comprehensive assessment of database systems, focusing on security configurations, access controls, data protection mechanisms, and overall database management practices."
+      servicesImage={{
+        url: "/assets/services/database.webp",
+        description: "Database Review"
+      }}
+      importance={[
         "Database configuration and hardening assessment",
         "Access control and authentication review",
         "Data encryption evaluation",
@@ -22,7 +26,34 @@ export default function DatabaseReview() {
         "Optimized database performance and security",
         "Increased confidence in database management practices",
       ]}
-    />
+      toolsAndTechnologies={[
+        { name: "SQLMap", image: "/tools/sqlmap.png" },
+        { name: "DbProtect", image: "/tools/dbprotect.png" },
+        { name: "Oracle Audit Vault", image: "/tools/oracle-audit-vault.png" },
+      ]}
+      faq={[
+        {
+          question: "What is a database review?",
+          answer: "A database review assesses the security and performance of database systems."
+        },
+        {
+          question: "How often should database reviews be conducted?",
+          answer: "It's recommended to conduct reviews at least annually or after significant changes."
+        }
+      ]}
+      testimonials={[
+        {
+          name: "Jane Smith",
+          company: "Data Corp",
+          quote: "The database review helped us identify critical vulnerabilities that we were unaware of."
+        }
+      ]} sampleReports={[]}  
+      certifications={[
+        { name: "CISA", imageUrl: "/certifications/cisa.png" },
+        { name: "CEH", imageUrl: "/certifications/ceh.png" },
+        { name: "ISO/IEC 27001 ASSOCIATE", imageUrl: "/certifications/iso-27001.png" },
+      ]}
+       caseStudies={[]} serviceTimeline={[]}    />
   )
 }
 

@@ -29,15 +29,10 @@ export default function DataInformationProtection() {
         number: 350,
         description: "Data protection assessments and improvements delivered",
       }}
-      services={[
-        "Data Classification and Protection",
-        "Data Encryption Review",
-        "Access Control and Data Privacy",
-        "Incident Response and Handling",
-        "Audit Findings",
-        "Recommendations",
-        "Conclusion",
-      ]}
+      servicesImage={{
+        url: "/assets/services/data.webp",
+        description: "Data & Information Protection"
+      }}
       benefits={[
         "Enhanced protection of sensitive data",
         "Reduced risk of data breaches and unauthorized access",

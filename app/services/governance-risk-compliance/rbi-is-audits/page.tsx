@@ -124,7 +124,14 @@ export default function RBIComplianceAudit() {
           question: "What happens if we fail the RBI compliance audit?",
           answer: "Failure to meet RBI compliance standards may result in penalties, reputational damage, and regulatory scrutiny. However, the audit provides actionable insights to help remediate gaps and bring your organization into compliance.",
         },
-      ]} benefits={[]} toolsAndTechnologies={[]} services={[]} certifications={[
+      ]}
+      benefits={[]}
+      toolsAndTechnologies={[]}
+      servicesImage={{
+        url: "/assets/services/compliance2.webp",
+        description: "RBI Compliance Audit - Information Systems (IS)"
+      }}
+      certifications={[
         { name: "CISA", imageUrl: "/certifications/cisa.png" },
         { name: "ISO 27001 LA", imageUrl: "/certifications/iso27001-la.jpeg" },
         { name: "ISO 27001 Implementer", imageUrl: "/certifications/iso27001-implementer.png" },

@@ -62,21 +62,24 @@ export function Hero() {
             custom={0.1}
           >
             <span className="block text-black dark:text-white font-extrabold">
-              Secure your digital
+              {/* Secure your digital */}
+              Yes! Dare to Dream, 
             </span>
-            <span className="block text-gradient">future with us</span>
+            <span className="block text-gradient">We’ll Make It Work.</span>
           </motion.h1>
           
-          <motion.p 
-            className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+          <motion.p
+            className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-3l mx-auto"
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
             custom={0.2}
           >
-            Your trusted partner in cybersecurity and IT solutions since 2009. 
-            We leverage cutting-edge technology to protect and empower your business 
-            in the digital age.
+            An ISO 27001:2022 and ISO 9001:2015 Certified Company
+            <br />
+            Since 2009, We Have Been the Trusted Force Behind Innovative Cybersecurity and IT Solutions, Driving Digital Success for Businesses.
+            <br />
+            This Organization Is Empanelled By <span className="text-red-600 dark:text-red-400" >CERT-In</span> for Providing Information Security Auditing Service
           </motion.p>
           
           <motion.div 

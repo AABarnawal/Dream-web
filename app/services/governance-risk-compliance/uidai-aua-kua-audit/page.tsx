@@ -127,6 +127,13 @@ export default function UIDAIComplianceAUA_KUA_Audit() {
           question: "What happens if we fail to comply with UIDAI's guidelines?",
           answer: "Non-compliance with UIDAI's regulations can result in penalties, legal consequences, and the loss of access to Aadhaar-based services, which could severely impact your organization's operations.",
         },
-      ]} services={[]} benefits={[]} toolsAndTechnologies={[]}    />
+      ]}
+      servicesImage={{
+        url: "/assets/services/uidai.webp",
+        description: "UIDAI Compliance - AUA/KUA Audit"
+      }}
+      benefits={[]}
+      toolsAndTechnologies={[]}
+    />
   )
 }

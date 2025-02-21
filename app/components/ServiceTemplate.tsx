@@ -21,7 +21,10 @@ interface ServiceTemplateProps {
     number: number
     description: string
   }
-  services: string[]
+  servicesImage?: {
+    url: string,
+    description: string
+  }
   benefits: string[]
   toolsAndTechnologies: { name: string; image: string }[]
   sampleReports: string[]
@@ -79,7 +82,7 @@ export default function ServiceTemplate({
   meaning,
   importance = [],
   trackRecord,
-  services = [],
+  servicesImage,
   benefits = [],
   toolsAndTechnologies = [],
   sampleReports = [],
@@ -195,9 +198,16 @@ export default function ServiceTemplate({
               </motion.p>
             </motion.div>
             <motion.div variants={fadeIn} className="w-full md:w-1/2">
-              <Image
-                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              {/* <Image
+                src="/assets/services/compliance.webp"
                 alt="Illustration representing meaning"
+                width={800}
+                height={600}
+                className="w-full h-full object-cover"
+              /> */}
+              <Image
+                src={servicesImage?.url || ''}
+                alt={servicesImage?.description || "Illustration representing meaning"}
                 width={800}
                 height={600}
                 className="w-full h-full object-cover"
@@ -277,6 +287,7 @@ export default function ServiceTemplate({
           </motion.section>
 
           {/* Sample Reports */}
+          {sampleReports && sampleReports.length > 0 && (
           <motion.section
             initial="visible"
             animate="visible"
@@ -285,7 +296,7 @@ export default function ServiceTemplate({
             <motion.h2 variants={fadeInUp} className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
               Sample Reports & Deliverables
             </motion.h2>
-            {sampleReports && sampleReports.length > 0 && (
+            
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {sampleReports.map((report, index) => (
                   <motion.div
@@ -300,8 +311,8 @@ export default function ServiceTemplate({
                   </motion.div>
                 ))}
               </div>
-            )}
-          </motion.section>
+            
+          </motion.section>)}
 
           {/* Certifications */}
           <motion.section
@@ -367,7 +378,7 @@ export default function ServiceTemplate({
           )}
 
           {/* Service Timeline */}
-          <TimelineSection />
+          {serviceTimeline && serviceTimeline.length > 0 && (<TimelineSection />)}
 
           {/* Client Testimonials */}
           <motion.section

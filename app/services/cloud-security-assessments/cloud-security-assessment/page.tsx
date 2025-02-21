@@ -31,16 +31,10 @@ export default function CloudSecurityAssessment() {
         number: 300,
         description: "Cloud environments assessed and secured successfully",
       }}
-      services={[
-        "Scope of Assessment",
-        "Cloud Security Controls Review",
-        "Compliance with Cloud Security Standards",
-        "Identity and Access Management (IAM) Review",
-        "Data Protection and Encryption",
-        "Vulnerability and Risk Analysis",
-        "Recommendations for Improvement",
-        "Final Assessment Report and Certification",
-      ]}
+      servicesImage={{
+        url: "/assets/services/cloud.webp",
+        description: "Cloud Security Assessment"
+      }} 
       assessmentMethods={{
         onsite: "Onsite evaluation of cloud infrastructure with hands-on security assessment.",
         offsite: "Remote assessment leveraging secure access to cloud environments.",
