@@ -92,8 +92,7 @@ export default function DevSecOps() {
           question: "Why we need DevSecOps?",
           answer: "DevSecOps is a way to make sure that security is integrated into the DevOps process. It helps to make sure that security is a shared responsibility throughout the entire IT lifecycle, from initial design through integration, testing, deployment, and software delivery.",
         },
-      ]}
-    />
+      ]} caseStudies={[]}    />
   )
 }
 

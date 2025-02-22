@@ -112,12 +112,11 @@ export default function ServiceTemplate({
       threshold: 0.1,
       rootMargin: "50px"
     })
-
     useEffect(() => {
-      if (timelineRef.current) {
+      if (timelineInView) {
         controls.start("visible")
       }
-    }, [])
+    }, [timelineInView, controls])
 
     return (
       <motion.section

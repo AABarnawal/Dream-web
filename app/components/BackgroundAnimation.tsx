@@ -44,11 +44,11 @@ export default function CareerPage() {
     }
   }
 
-  const particlesInit = useCallback(async (engine) => {
+  const particlesInit = useCallback(async (engine: any) => {
     await loadSlim(engine)
   }, [])
 
-  const particlesLoaded = useCallback(async (container) => {
+  const particlesLoaded = useCallback(async (container : any) => {
     await console.log(container)
   }, [])
 
@@ -75,7 +75,6 @@ export default function CareerPage() {
               onHover: {
                 enable: true,
                 mode: "repulse",
-                distance: 100,
               },
               resize: true,
             },
